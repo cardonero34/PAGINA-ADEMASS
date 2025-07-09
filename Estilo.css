@@ -1,0 +1,1515 @@
+/*------------------------------ Recursos de la pagina ------------------------------*/
+
+/* archivo de fuentes */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./MULTIMEDIA/fuentes/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(./MULTIMEDIA/fuentes/Outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./MULTIMEDIA/fuentes/Poppins/Poppins-Regular.ttf);
+}
+
+:root {
+
+    /* colores */
+    --primary-color-verde: #c4cf2c;
+    --secondary-color-azul: #28a3bf;
+    --tertiary-color-gris: #486066;
+    --tertiary-color-gris-oscuro: #000000d1;
+    --tertiary-color-gris-claro: #00000033;
+    --tertiary-color-gris-claro2: #fafbfc;
+    --tertiary-color-gris-claro3: #666666;
+    --terciary-color-gris-texto: #AAAAAA;
+    --tertiary-color-gris-texto2: #999999;
+    --quaternary-color-blanco: #ffffff;
+    --quinary-color-naranja: #ff9900;
+    --senary-color-verde-agua: #44d89e;
+    --septenary-color-amarillo: #ffff00;
+
+    /* fuentes */
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-outfit: 'Outfit', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+/*------------------------------ Estilo de la pagina ------------------------------*/
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: var(--font-open-sans);
+}
+
+/* Encabezado de navegación */
+.espacio-header {
+    background-color: var(--quaternary-color-blanco);
+    height: 13vh;
+}
+
+.header {
+
+    display: flex;
+    justify-content: center;
+    height: 13vh;
+    position: fixed;
+    background-color: var(--quaternary-color-blanco);
+    width: 100%;
+    top: -0vh;
+
+    .header-container {
+
+        display: flex;
+        align-items: center;
+        width: 80%;
+
+        .container-elementos-header {
+
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: end;
+
+            .container-imagen {
+
+                width: 24%;
+
+                .imagen-logo {
+                    width: 100%;
+                }
+            }
+
+            nav {
+
+                display: flex;
+                align-items: center;
+                padding-bottom: 5px;
+                flex-direction: row;
+                font-size: 14px;
+                font-weight: bold;
+                gap: 28px;
+
+
+                a {
+                    color: var(--tertiary-color-gris);
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+
+                .boton-inicio {
+                    color: var(--secondary-color-azul);
+                }
+
+                .boton-campus {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    width: 95px;
+                    height: 34px;
+                    background-color: var(--secondary-color-azul);
+
+                    a {
+                        color: var(--quaternary-color-blanco);
+                    }
+
+                }
+
+                .boton-acceder {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    width: 95px;
+                    height: 34px;
+                    background-color: var(--primary-color-verde);
+
+                    a {
+                        color: var(--quaternary-color-blanco);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Imagen de fondo inicial */
+.imagen-de-fondo {
+    width: 100%;
+    height: 115vh;
+    background-image: url(./MULTIMEDIA/PICTURES/ademass_imagen.jpg.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* premios y reconocimientos */
+.premios-reconocimientos {
+
+    display: flex;
+    justify-content: center;
+    background-color: var(--tertiary-color-gris-oscuro);
+    height: 33vh;
+
+    .container-premios-reconocimientos {
+
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 13%;
+
+        div {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            .icono-premio {
+                width: 100px;
+            }
+
+            p {
+                color: var(--quinary-color-naranja);
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/* sección sobre descripcion de ademass */
+.descripcion-ademass {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+
+    .container-descripcion-ademass {
+
+        width: 80%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 60px;
+
+        .cntainer-left {
+
+            width: 49%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            h2 {
+                font-size: 16px;
+                font-family: var(--font-poppins);
+                color: var(--tertiary-color-gris-claro);
+                letter-spacing: 1px;
+                line-height: 1.3em;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                font-size: 36px;
+                font-family: var(--font-poppins);
+                color: var(--secondary-color-azul);
+            }
+
+            p {
+                font-size: 15px;
+                font-family: var(--font-open-sans);
+                color: var(--tertiary-color-gris);
+                line-height: 1.8em;
+            }
+
+            .container-comentario {
+
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                margin-top: 30px;
+
+                .container-icono-perfil-comentario {
+
+                    img {
+                        border: 2px solid var(--tertiary-color-gris-claro);
+                        border-radius: 100%;
+                        width: 50px;
+                    }
+                }
+
+                .container-texto-comentario {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+
+                    .autor-nombre {
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+
+        .container-right {
+
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+
+        }
+    }
+
+    .container-botones-acceso-registro {
+
+        width: 80%;
+        display: flex;
+        gap: 60px;
+
+        .container-boton-acceso {
+
+            width: 50%;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+
+            .boton-left-azul {
+
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+                padding-right: 1.2rem;
+                padding-left: 1.2rem;
+                border: 2px solid var(--secondary-color-azul);
+                border-radius: 50px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: var(--secondary-color-azul);
+                }
+            }
+
+            .boton-rigth-verde {
+
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+                padding-right: 1.2rem;
+                padding-left: 1.2rem;
+                border: 2px solid var(--primary-color-verde);
+                border-radius: 50px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: var(--primary-color-verde);
+                }
+            }
+
+        }
+    }
+}
+
+/* sección pilares de ademass */
+.pilares-ademass {
+
+    background-color: var(--tertiary-color-gris-claro2);
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container-pilares-ademass {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+
+        .container-titulos-pilares {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: 165px;
+            gap: 25px;
+
+            h2 {
+                font-size: 16px;
+                font-family: var(--font-poppins);
+                color: var(--tertiary-color-gris-claro);
+                letter-spacing: 1px;
+                line-height: 1.3em;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                font-size: 36px;
+                font-family: var(--font-poppins);
+                color: var(--primary-color-verde);
+            }
+
+        }
+
+        .container-tarjetas-pilares {
+
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 50px;
+
+            .container-superior-tarjetas-pilares,
+            .container-inferior-tarjetas-pilares {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 31px;
+
+
+                .tarjeta-pilar {
+
+                    width: 33%;
+                    background-color: var(--quaternary-color-blanco);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 10px 24px 6px rgba(0, 0, 0, 0.06);
+                    border-radius: 6px;
+
+                    .contenedor-tarjeta-pilar {
+
+                        width: 82%;
+                        padding-bottom: 40px;
+                        padding-top: 40px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        gap: 5px;
+
+                        img {
+                            width: 128px;
+                            padding-bottom: 1.5rem;
+                        }
+
+                        .subtitulo-tarjeta-pilar {
+                            font-family: var(--font-poppins);
+                            font-weight: bold;
+                            font-size: 18px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-family: var(--font-open-sans);
+                            color: var(--tertiary-color-gris);
+                            line-height: 1.8em;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .container-boton-verde-acceder {
+
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 100px;
+
+            .boton-verde-acceder {
+
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+                padding-right: 2rem;
+                padding-left: 2rem;
+                border: 2px solid var(--primary-color-verde);
+                border-radius: 50px;
+
+                a {
+                    text-decoration: none;
+                    font-family: var(--font-poppins);
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    color: var(--primary-color-verde);
+                }
+
+            }
+        }
+    }
+}
+
+/* sección de invitación a discord */
+.invitacion-discord {
+
+    background-image: url(./MULTIMEDIA/PICTURES/explicativo-medusilla-fondo-scaled.jpg.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container-invitacion-discord {
+
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+
+        .container-elementos-left {
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 46%;
+
+            h2 {
+                color: var(--tertiary-color-gris-claro);
+                font-size: 16px;
+                font-family: var(--font-poppins);
+                letter-spacing: 1px;
+                line-height: 1.3em;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                color: var(--quaternary-color-blanco);
+                font-size: 36px;
+                font-family: var(--font-poppins);
+            }
+
+            p {
+                color: var(--quaternary-color-blanco);
+                font-size: 15px;
+                font-family: var(--font-open-sans);
+                line-height: 1.8em;
+            }
+
+            .container-boton-unirce-discord {
+
+                display: flex;
+
+                .boton-unirce-discord {
+
+                    padding-top: 0.8rem;
+                    padding-bottom: 0.8rem;
+                    padding-right: 2rem;
+                    padding-left: 2rem;
+                    background-color: var(--quaternary-color-blanco);
+                    border-radius: 50px;
+                    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.16);
+
+                    a {
+                        text-decoration: none;
+                        font-family: var(--font-poppins);
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color: var(--primary-color-verde);
+
+                    }
+                }
+            }
+
+        }
+
+        .container-imagen-right {
+            width: 47%;
+
+            img {
+                width: 100%;
+                position: relative;
+                bottom: 3rem;
+            }
+        }
+    }
+}
+
+/* sección de staff */
+.staff {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175vh;
+
+    .container-staff {
+
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        .container-elementos-textuales-staff {
+
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            align-items: center;
+            gap: 30px;
+
+            h2 {
+                color: var(--tertiary-color-gris-claro);
+                font-size: 16px;
+                font-family: var(--font-poppins);
+                letter-spacing: 1px;
+                line-height: 1.3em;
+                text-transform: uppercase;
+            }
+
+            .container-boton-unirce-discord {
+                .boton-unirce-discord {
+
+                    padding-top: 0.8rem;
+                    padding-bottom: 0.8rem;
+                    padding-right: 2rem;
+                    padding-left: 2rem;
+                    border: 2px solid var(--primary-color-verde);
+                    border-radius: 50px;
+
+                    a {
+                        text-decoration: none;
+                        font-family: var(--font-poppins);
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color: var(--primary-color-verde);
+                    }
+                }
+            }
+
+            h1 {
+                color: var(--secondary-color-azul);
+                font-size: 36px;
+                font-family: var(--font-poppins);
+            }
+
+        }
+
+        .container-tarjetas-staff {
+
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+
+            .tarjeta-staff {
+
+                width: 33%;
+                border-radius: 6px;
+                box-shadow: 0px 0px 24px 6px rgba(0, 0, 0, 0.06);
+                display: flex;
+                justify-content: center;
+
+
+                .container-tarjeta-staff {
+
+                    width: 75%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: center;
+                    text-align: center;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .datos-de-staff {
+
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        h2 {
+                            font-family: var(--font-poppins);
+                            font-weight: 600;
+                            font-size: 18px;
+                            color: var(--tertiary-color-gris);
+                        }
+
+                        p {
+                            color: var(--terciary-color-gris-texto);
+                            font-size: 14px;
+                            font-family: var(--font-open-sans);
+                            line-height: 1.3em;
+                        }
+                    }
+
+                    .info-de-staff {
+
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        margin-top: -5px;
+
+                        p {
+                            font-size: 14px;
+                            font-family: var(--font-open-sans);
+                            font-weight: 500;
+                            color: var(--tertiary-color-gris-claro3);
+                            line-height: 1.8em;
+                        }
+
+                    }
+
+                    .container-iconos-redes-sociales {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        padding-top: 10px;
+
+                        .icon {
+                            font-size: 20px;
+                            color: var(--senary-color-verde-agua);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* sección de comentarios */
+.comentarios {
+
+    background-image: url(./MULTIMEDIA/PICTURES/ademass_green.jpg.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+
+
+    .container-comentarios {
+
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+        .container-titulos-comentarios {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            height: 170px;
+
+            h2 {
+                color: var(--tertiary-color-gris-claro);
+                font-size: 16px;
+                font-family: var(--font-poppins);
+                letter-spacing: 1px;
+                line-height: 1.3em;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                color: var(--quaternary-color-blanco);
+                font-size: 36px;
+                font-family: var(--font-poppins);
+            }
+        }
+
+        .container-tarjetas-comentarios {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .tarjeta-comentario {
+
+                width: 31%;
+                display: flex;
+                justify-content: center;
+                background-color: var(--quaternary-color-blanco);
+                border-radius: 6px;
+                box-shadow: 0px 10px 24px 6px rgba(0, 0, 0, 0.06);
+
+                .container-tarjeta-comentario {
+
+                    width: 83%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 50px;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+
+
+                    .comentario {
+                        text-align: center;
+                        font-family: var(--font-open-sans);
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: var(--tertiary-color-gris);
+                        line-height: 1.8em;
+                    }
+
+                    .autor {
+
+                        .nombre {
+                            font-family: var(--font-open-sans);
+                            font-size: 14px;
+                            color: var(--tertiary-color-gris-claro3);
+                            font-weight: bold;
+                        }
+
+                        .cargo {
+                            font-family: var(--font-open-sans);
+                            font-size: 14px;
+                            color: var(--tertiary-color-gris-claro3);
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+
+        .container-boton-vermas {
+
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 100px;
+
+
+            .boton-vermas {
+
+                padding: 6px 20px;
+                padding-bottom: 10px;
+                border: 2px solid var(--quaternary-color-blanco);
+
+                a {
+                    text-decoration: none;
+                    font-family: var(--font-open-sans);
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: var(--quaternary-color-blanco);
+                }
+            }
+        }
+    }
+}
+
+/* sección de articulos */
+.articulos {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-color-gris-claro2);
+    height: 150vh;
+
+    .container-articulos {
+
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        .container-titulos-articulos {
+
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 30px;
+            height: 170px;
+
+            h2 {
+                color: var(--tertiary-color-gris-claro);
+                font-size: 16px;
+                font-family: var(--font-poppins);
+                letter-spacing: 1px;
+                line-height: 1.3em;
+                text-transform: uppercase;
+
+            }
+
+            h1 {
+                color: var(--primary-color-verde);
+                font-size: 36px;
+                font-family: var(--font-poppins);
+
+            }
+        }
+
+        .container-tarjetas-articulos {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .tarjeta-articulo {
+                width: 31%;
+                display: flex;
+                justify-content: center;
+                background-color: var(--quaternary-color-blanco);
+                border-radius: 6px;
+                box-shadow: 0px 10px 24px 6px rgba(0, 0, 0, 0.06);
+
+                .container-tarjeta-articulo {
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+
+                    img {
+                        border-radius: 6px 6px 0px 0px;
+                        width: 100%;
+                    }
+
+                    .texto-articulo {
+
+                        width: 85%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        padding-bottom: 20px;
+
+                        h2 {
+                            font-family: var(--font-poppins);
+                            font-weight: 600;
+                            font-size: 18px;
+                            color: var(--tertiary-color-gris);
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 600;
+                            font-family: var(--font-open-sans);
+                            color: var(--tertiary-color-gris-claro3);
+                            line-height: 1.8em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .container-boton-vermas {
+
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 130px;
+
+            .boton-vermas {
+
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+                padding-right: 2rem;
+                padding-left: 2rem;
+                border: 2px solid var(--primary-color-verde);
+                border-radius: 50px;
+
+                a {
+                    text-decoration: none;
+                    font-family: var(--font-poppins);
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    color: var(--primary-color-verde);
+                }
+            }
+        }
+    }
+}
+
+/* imagen de fondo final */
+.imagen-de-fondo-final {
+    width: 100%;
+    height: 40vh;
+    background-image: url(./MULTIMEDIA/PICTURES/ademass_office_2-1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* footer */
+.footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
+    height: 65vh;
+
+    .container-footer {
+
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: var(--tertiary-color-gris-texto2);
+
+        .container-elementos-footer {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .elemento1 {
+
+                width: 21%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 30px;
+
+                img {
+                    width: 100%;
+                }
+
+                div {
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 1.8em;
+                    }
+
+                    .correo {
+                        color: var(--quaternary-color-blanco);
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .elemento2 {
+
+                width: 21%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h2 {
+                    color: var(--secondary-color-azul);
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    a {
+                        font-family: var(--font-outfit);
+                        font-size: 16px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        color: var(--tertiary-color-gris-texto2);
+                    }
+                }
+
+            }
+
+            .elemento3 {
+
+                display: flex;
+                flex-direction: column;
+                width: 21%;
+                gap: 5px;
+
+                h2 {
+                    color: var(--secondary-color-azul);
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+
+                .container-iconos-redes-sociales {
+
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    row-gap: 5px;
+                    column-gap: 8px;
+                    padding-bottom: 30px;
+
+                    i {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: var(--quaternary-color-blanco);
+                        font-size: 20px;
+                        width: 32px;
+                        height: 32px;
+                    }
+
+                    .facebook {
+                        background-color: #3b5998;
+                        border-radius: 3px;
+                    }
+
+                    .twitter {
+                        background-color: #00aced;
+                        border-radius: 3px;
+                    }
+
+                    .instagram {
+                        background-color: #ea2c59;
+                        border-radius: 3px;
+                    }
+
+                    .telegram {
+                        background-color: #179cde;
+                        border-radius: 3px;
+                    }
+
+                    .tiktok {
+                        background-color: #fe2c55;
+                        border-radius: 3px;
+                    }
+
+                    .youtube {
+                        background-color: #a82400;
+                        border-radius: 3px;
+                    }
+
+                    .linkedin {
+                        background-color: #007bb6;
+                        border-radius: 3px;
+                    }
+
+                    .rss {
+                        background-color: #ff8a3c;
+                        border-radius: 3px;
+                    }
+
+                    .google {
+                        background-color: #4285f4;
+                        border-radius: 3px;
+                    }
+
+                }
+
+                .boton-discord {
+
+                    background-color: #8300e9;
+                    display: flex;
+                    flex-direction: row;
+                    border-radius: 3px;
+                    justify-content: center;
+                    align-items: center;
+                    height: 46px;
+                    width: 127px;
+                    gap: 5px;
+
+                    p {
+                        color: var(--quaternary-color-blanco);
+                        font-weight: 600;
+                        font-size: 20px;
+                    }
+                }
+
+            }
+        }
+
+        .container-copyright {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 100px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/*------------------------------ Responsive de la pagina ------------------------------*/
+
+/* para tablet */
+@media screen and (max-width:992px) {
+
+    /* premios y reconocimientos */
+    .premios-reconocimientos {
+
+        height: 33vh;
+
+        .container-premios-reconocimientos {
+
+            gap: 3%;
+
+            div {
+                width: 47%;
+            }
+        }
+    }
+
+    /* sección sobre descripcion de ademass */
+    .descripcion-ademass {
+
+        height: 210vh;
+
+    }
+
+    /* sección pilares de ademass */
+    .pilares-ademass {
+
+        height: 250vh;
+
+    }
+
+    /* sección de invitación a discord */
+    .invitacion-discord {
+
+        height: 120vh;
+      
+    }
+
+    /* sección de staff */
+    .staff {
+
+        height: 300vh;
+
+        .container-staff {
+
+            .container-tarjetas-staff {
+
+                flex-wrap: wrap;
+                gap: 31px;
+
+                .tarjeta-staff {
+                    width: 48%;
+                }
+            }
+        }
+    }
+
+    /* sección de comentarios */
+    .comentarios {
+
+        height: 160vh;
+
+    }
+
+    /* sección de articulos */
+    .articulos {
+
+        height: 180vh;
+
+    }
+
+    /* imagen de fondo final */
+    .imagen-de-fondo-final {
+        
+        height: 55vh;
+
+    }
+
+    /* footer */
+    .footer {
+
+        height: 120vh;
+
+        .container-footer {
+
+            .container-elementos-footer {
+
+                flex-wrap: wrap;
+                gap: 50px;
+
+                .elemento1, .elemento2, .elemento3 {
+
+                    width: 40%;
+                    
+                }
+            }
+        }
+    }
+
+}
+
+/* para movil */
+@media screen and (max-width:600px) {
+
+    /* Encabezado de navegación */
+    .header {
+
+        .header-container {
+
+            .container-elementos-header {
+
+                .container-imagen {
+
+                    width: 40%;
+
+                }
+
+                nav {
+
+                    visibility: hidden;
+                    position: absolute;
+
+                }
+            }
+        }
+    }
+
+    /* premios y reconocimientos */
+    .premios-reconocimientos {
+
+        height: 75vh;
+
+        .container-premios-reconocimientos {
+
+            flex-direction: column;
+            align-items: center;
+            gap: 13%;
+
+            div {
+                width: 100%;
+            }
+        }
+    }
+
+    /* sección sobre descripcion de ademass */
+    .descripcion-ademass {
+
+        flex-direction: column;
+        height: 340vh;
+        gap: 140px;
+
+        .container-descripcion-ademass {
+
+            flex-direction: column;
+
+            .cntainer-left {
+
+                width: 100%;
+
+                .container-comentario {
+
+                    flex-direction: column;
+            
+                }
+            }
+
+            .container-right {
+
+                width: 100%;
+
+            }
+        }
+
+        .container-botones-acceso-registro {
+
+            flex-direction: column;
+            gap: 10px;
+
+            .container-boton-acceso {
+
+                width: 100%;
+
+            }
+        }
+    }
+
+    /* sección pilares de ademass */
+    .pilares-ademass {
+
+        height: 480vh;
+
+        .container-pilares-ademass {
+
+            .container-titulos-pilares {
+                padding-bottom: 70px;
+            }
+
+            .container-tarjetas-pilares {
+
+                gap: 50px;
+
+                .container-superior-tarjetas-pilares,
+                .container-inferior-tarjetas-pilares {
+
+                    flex-direction: column; /*  */
+                    justify-content: center; /*  */
+
+                    .tarjeta-pilar {
+
+                        width: 100%; /*  */
+
+                    }
+                }
+            }
+        }
+    }
+
+    /* sección de invitación a discord */
+    .invitacion-discord {
+
+        height: 200vh;
+
+        .container-invitacion-discord {
+
+            flex-direction: column;
+            gap: 50px;
+
+            .container-elementos-left {
+
+                width: 100%;
+
+            }
+
+            .container-imagen-right {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    position: static;
+                }
+            }
+        }
+    }
+
+    /* sección de staff */
+    .staff {
+
+        height: 570vh;
+
+        .container-staff {
+
+            flex-direction: column;
+
+            .container-elementos-textuales-staff {
+                text-align: center;
+            }
+
+            .container-tarjetas-staff {
+
+                flex-direction: column;
+
+                .tarjeta-staff {
+
+                    width: 100%;
+                
+                }
+            }
+        }
+    }
+
+    /* sección de comentarios */
+    .comentarios {
+
+        height: 240vh;
+
+        .container-comentarios {
+
+            .container-titulos-comentarios {
+
+                text-align: center;
+                padding-bottom: 50px;
+
+            }
+
+            .container-tarjetas-comentarios {
+
+                flex-direction: column;
+                gap: 30px;
+
+                .tarjeta-comentario {
+
+                    width: 100%;
+                
+                }
+            }
+        }
+    }
+
+    /* sección de articulos */
+    .articulos {
+
+        height: 370vh;
+
+        .container-articulos {
+
+            .container-titulos-articulos {
+
+                padding-bottom: 50px;
+
+            }
+
+            .container-tarjetas-articulos {
+
+                flex-direction: column;
+                gap: 50px;
+
+                .tarjeta-articulo {
+
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+
+    /* imagen de fondo final */
+    .imagen-de-fondo-final {
+        
+        height: 50vh;
+        
+    }
+
+    /* footer */
+    .footer {
+
+        height: 185vh;
+
+        .container-footer {
+
+            width: 80%;
+
+            .container-elementos-footer {
+
+                flex-direction: column;
+
+                .elemento1 {
+
+                    width: 100%;
+
+                    img {
+                        width: 70%;
+                    }
+                }
+
+                .elemento2 {
+
+                    width: 100%;
+            
+                }
+
+                .elemento3 {
+
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------ DAHHHHHH ¡¡¡OMG TERMINE!!! SLAAAAAAY ------------------------------*/
